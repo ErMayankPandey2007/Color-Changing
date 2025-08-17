@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+    </style>
+    <script>
+        var mycolors=["red","blue","yellow","orange","green","pink","purple","brown"];
+        var index = 0;
+        function changecolor()
+        {
+            document.getElementById("box").style.backgroundColor = mycolors[index];
+            index++;
+            if(index==mycolors.length){
+                index=0;
+
+            }
+            setTimeout(changecolor,1);
+        }
+        var myname="mayank";
+        
+    </script>
+</head>
+<body onload="changecolor()">
+    <div id="box"> </div>
+<H1>mayank</H1>
+</body>
+</html>
